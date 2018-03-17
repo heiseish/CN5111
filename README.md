@@ -109,6 +109,9 @@ In order to specify any variable as integer, just indicate the word `int` in fro
 
 So in oder to solve the above problem, present it the following way on paper (order of the line doesn't matter):
 
+
+======================================
+
 `max: 1200 a 1600 b`
 
 `30 a 20 b <= 300`
@@ -120,6 +123,8 @@ So in oder to solve the above problem, present it the following way on paper (or
 `int a`
 
 `int b`
+
+=======================================
 
 Once the camerat capture the picture, user will be directed to a form where he/she can edit/add in constraint equations that are not captured/captured wrongly by the camera.
 //TODO: Add ability of remove constraint equation added by mistakes.
