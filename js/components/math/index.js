@@ -57,26 +57,6 @@ class Math extends Component {
     }
     
   }
-
-  // componentDidMount() {
-  //   console.log('hi')
-  //   let model 
-  //   = "max: 1200 table 1600 dresser<br>30 table 20 dresser <= 300<br>5 table 10 dresser <= 110<br>30 table 50 dresser <= 400<br>int table<br>int dresser"
-
-  //   axios.post('https://hacknroll18.herokuapp.com/math', {
-  //     model: model
-  //   })
-  //   .then(response => {
-  //     console.log(response.data)
-  //     this.setState({result: Object.entries(response.data), resultLoading: false, loaded: true})
-  //   })
-  //   .catch(function (error) {
-  //     console.log(error);
-  //   });
-
-    
-  // }
-
   
   
   openCamera() {

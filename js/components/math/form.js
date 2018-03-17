@@ -106,8 +106,9 @@ class ParamsList extends Component {
     let objective = '', constraint = [], params = []
     let text = ''
     for (let statement of this.state.data) {
-      console.log(statement)
-      if (statement.text.indexOf('max') !== -1)
+      if (statement.text === '') {
+
+      } else if (statement.text.indexOf('max') !== -1)
         objective = statement.text
       else if (statement.text.indexOf('<=') !== -1
         || statement.text.indexOf('=>') !== -1

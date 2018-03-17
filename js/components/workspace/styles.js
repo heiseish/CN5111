@@ -43,5 +43,11 @@ export default {
   label: {
     fontSize: 15, 
     fontWeight: 'bold'
-  }
+  },
+  buttonView: {
+    width: deviceWidth,
+    height: 60,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 };

@@ -4,6 +4,7 @@
 .expo/
 /js/lib/MVPapp-bc4c478a8b84.json
 /js/model/credential.js
+/js/lib/api.js
 # dependencies
 /node_modules
 

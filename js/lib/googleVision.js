@@ -4,7 +4,8 @@ process.env.GOOGLE_APPLICATION_CREDENTIALS="./js/lib/MVPapp-bc4c478a8b84.json"
 const _ = require('lodash/core')
 // Imports the Google Cloud client library
 const vision = require('react-cloud-vision-api')
-vision.init({auth: 'AIzaSyCyXWuLnv_GmGAL3szA1h1n1DPBWVSBego'})
+import { api } from './api'
+vision.init({auth: api})
 
 export const visionText = (image: string) => {
 	return new Promise((resolve, reject) => {

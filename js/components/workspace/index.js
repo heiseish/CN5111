@@ -49,7 +49,7 @@ class Workspace extends Component {
   constructor(props) {
     super(props)
     this.state={
-      isLoading: false,
+      isLoading: true,
       data: []
 
     }
@@ -135,10 +135,11 @@ class Workspace extends Component {
     })
 
     if (!result.cancelled) {
-      this.setState({isLoading: false})
+      this.setState({isLoading: true})
       this.parseImage(result.base64)
 
     }
+    
 
   }
 
@@ -151,13 +152,15 @@ class Workspace extends Component {
     })
 
     if (!result.cancelled) {
-      this.setState({isLoading: false})
+      this.setState({isLoading: true})
       this.parseImage(result.base64)
     }
+  
   }
 
   parseImage(imageBase64: any) {
     visionText(imageBase64).then(text => {
+        this.setState({isLoading: false})
         this.props.navigate('NoteForm', {...parseImageText(text)});
     })
   }
@@ -171,10 +174,10 @@ class Workspace extends Component {
       <Container>  
         <Header title="Workspace" hasRight iconNameRight="add" handlePressRight={() => this.openCamera()}/>
         <Content keyboardShouldPersistTaps="always">
-          {this.state.isLoading ? <ColorDotsLoader 
+          {this.state.isLoading ? <View style={styles.buttonView}><ColorDotsLoader 
             color1={primary.normal} 
             color2={primary.background}
-            color3={secondary.normal}/> : 
+            color3={secondary.normal}/></View> : 
           <FlatList
             data={this.state.data}
             extraData={this.state}
