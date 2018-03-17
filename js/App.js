@@ -1,0 +1,34 @@
+//@flow
+'use-strict';
+import React from 'react';
+import { addNavigationHelpers } from 'react-navigation';
+import AppNavigator from './AppNavigator';
+import { StatusBar } from 'react-native';
+import { Root, StyleProvider } from 'native-base'
+import { connect } from 'react-redux';
+import getTheme from '../native-base-theme/components';
+import { addListener } from './configureStore'
+
+class App extends React.Component {
+  render() {
+    return (
+      <StyleProvider  style={getTheme()}>
+        <Root>
+          <StatusBar
+          // backgroundColor={statusBarColor.statusBarColor}
+          />
+          <AppNavigator navigation={addNavigationHelpers({
+            dispatch: this.props.dispatch,
+            state: this.props.nav,
+            addListener
+          })} />
+        </Root>
+      </StyleProvider>
+    );
+  }
+}
+
+const mapStateToProps = (state) => ({
+  nav: state.nav
+});
+export default connect(mapStateToProps)(App);
