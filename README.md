@@ -4,8 +4,8 @@
 Icon made by [https://www.flaticon.com/authors/maxim-basinski] from www.flaticon.com 
 
 
-## Authors: Dao Truong Giang 0143832J
-- [Dao Truong Giang](https://github.com/heiseish)
+## Authors: Dao Truong Giang
+- [Dao Truong Giang](https://github.com/heiseish) A0143832J
 
 ## Installation
 - Install [Expo Client App](https://docs.expo.io/versions/latest/introduction/installation.html) on your mobile phone.
@@ -15,7 +15,7 @@ Icon made by [https://www.flaticon.com/authors/maxim-basinski] from www.flaticon
 - Use the built-in QR Code scanner to scan the QR code on [Engineer Workspace](https://exp.host/@heiseish/mathsolver).
 - Alternatively, press the `+` symbol on the top right-hand corner of the app and key in the following URL `https://exp.host/@heiseish/mathsolver`.
 
-## Development
+## Development (for dev only)
 - Install [Node](https://nodejs.org/en/download/).
 - Install [Yarn](https://yarnpkg.com/en/docs/install#mac-tab).
 - Follow the installation steps in the React Native ["Getting Started Guide"](https://facebook.github.io/react-native/docs/getting-started.html).
@@ -127,6 +127,10 @@ After confirming the details, the result screen will appear:
 
 To solve any other MILP problem, just follow the above format and make sure the same format is correctly used.
 ![pic5](./assets/mathForm.jpg) ![pic6](./assets/result.jpg)
+
+__RESULTS:__: As can be seen from the image, the best way to produce 8 tables and 3 dressers to maximize the profit.
+
+Using the similar format, the solver engine can solver MILP or LP problems. 
 
 > __Notes__: the mobile is using a paid Google Vision Api that charges per request sent. Please restraint from sending too many image requests for processing.
 - Make sure the letter `O` (`o` capitalized) and the number `0` are correctly placed in the math form. The application uses text recognition to reformat and convert it to solvable JSON format so any mistake between the letter and number `0` could give a null result.
