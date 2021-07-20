@@ -35,7 +35,7 @@
     "native-base": "^2.13.13",
     "react": "16.13.1",
     "react-cloud-vision-api": "^0.3.0",
-    "react-native": "0.63.2",
+    "react-native": "0.64.1",
     "react-native-indicator": "^1.2.2",
     "react-native-modalbox": "^2.0.0",
     "react-navigation": "^4.4.0",
